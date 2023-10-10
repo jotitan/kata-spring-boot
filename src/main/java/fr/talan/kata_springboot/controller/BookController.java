@@ -23,12 +23,12 @@ public class BookController {
         return service.get(id).orElseThrow(() -> new BookNotFoundException("Impossible to find book"));
     }
 
-    @GetMapping("")
+    @GetMapping
     public Collection<Book> getBooks() {
         return service.findAll();
     }
 
-    @PostMapping(value = "")
+    @PostMapping
     public Book createBook(@RequestBody BookDto dto) {
         return service.create(dto);
     }

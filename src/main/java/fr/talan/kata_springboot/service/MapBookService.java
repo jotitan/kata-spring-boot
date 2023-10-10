@@ -10,7 +10,7 @@ import java.util.*;
 @Service
 @ConditionalOnProperty(name = "book.storage", havingValue = "map")
 public class MapBookService implements BookService {
-    private Map<Integer,Book> books = new HashMap();
+    private final Map<Integer,Book> books = new HashMap<>();
     @Override
     public Optional<Book> get(Integer id) {
         return books.containsKey(id) ? Optional.of(books.get(id)) : Optional.empty();

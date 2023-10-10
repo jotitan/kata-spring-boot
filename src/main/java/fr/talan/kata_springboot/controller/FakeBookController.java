@@ -19,7 +19,7 @@ public class FakeBookController {
         return new Book(id, String.format("Title : %d", id));
     }
 
-    @PostMapping(value = "")
+    @PostMapping
     public Book createBook(@RequestBody BookDto dto){
         return new Book(-1, dto.title());
     }
