@@ -19,7 +19,7 @@ import org.springframework.web.context.WebApplicationContext;
 
 @SpringBootTest()
 @AutoConfigureMockMvc
-public class FakeBookControllerTest {
+class FakeBookControllerTest {
     @Autowired
     private WebApplicationContext webApplicationContext;
 

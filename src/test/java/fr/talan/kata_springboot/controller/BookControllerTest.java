@@ -23,7 +23,7 @@ import org.springframework.web.context.WebApplicationContext;
 
 @SpringBootTest(properties = {"book.storage=map"})
 @AutoConfigureMockMvc
-public class BookControllerTest {
+class BookControllerTest {
 
     @Autowired
     private WebApplicationContext webApplicationContext;

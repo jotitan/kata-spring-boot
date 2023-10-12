@@ -25,7 +25,7 @@ import java.util.Optional;
 
 @SpringBootTest(properties = {"book.storage=map"})
 @AutoConfigureMockMvc
-public class UnitBookControllerTest {
+class UnitBookControllerTest {
 
     @Autowired
     private WebApplicationContext webApplicationContext;
