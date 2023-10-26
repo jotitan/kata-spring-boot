@@ -25,8 +25,4 @@ public class FakeBookController {
         return ResponseEntity.ok(new Book(id, String.format("Title : %d", id)));
     }
 
-    @PostMapping
-    public Book createBook(@RequestBody BookDto dto) {
-        return new Book(-1, dto.title());
-    }
 }
