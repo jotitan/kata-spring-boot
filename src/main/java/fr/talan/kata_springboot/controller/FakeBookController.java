@@ -2,6 +2,7 @@ package fr.talan.kata_springboot.controller;
 
 import fr.talan.kata_springboot.controller.dto.BookDto;
 import fr.talan.kata_springboot.model.Book;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -23,6 +24,11 @@ public class FakeBookController {
             return ResponseEntity.notFound().build();
         }
         return ResponseEntity.ok(new Book(id, String.format("Title : %d", id)));
+    }
+
+    @PostMapping()
+    public ResponseEntity<Book> postBookResponse(@RequestBody BookDto bookDto) {
+        return ResponseEntity.ok(new Book(5, bookDto.title()));
     }
 
 }

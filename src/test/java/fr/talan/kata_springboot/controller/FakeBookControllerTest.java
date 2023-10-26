@@ -42,13 +42,13 @@ class FakeBookControllerTest {
         this.mockMvc.perform(MockMvcRequestBuilders.get("/fakebooks/20")).andExpect(MockMvcResultMatchers.status().isNotFound());
     }
 
-    /*@Test
+    @Test
     void createBookMustSuccess()throws Exception{
         this.mockMvc.perform(MockMvcRequestBuilders.post("/fakebooks")
                         .content("{\"title\":\"By book\"}")
                         .contentType(MediaType.APPLICATION_JSON)
-                ).andExpect(MockMvcResultMatchers.status().isOk());
-    }*/
+                ).andExpect(MockMvcResultMatchers.status().isCreated());
+    }
 
 }
 
