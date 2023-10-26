@@ -1,6 +1,6 @@
 # Exercice 1 : Spring MVC
 
-##1 - Un serveur simple : hello world
+## Un serveur simple : hello world
 
 Nous allons utiliser Spring MVC pour créer un serveur.
 
@@ -14,11 +14,18 @@ Nous allons utiliser Spring MVC pour créer un serveur.
 </parent>
 ```
 * Créer une classe de démarrage avec une méthode main
-* Démarrer le projet : l'application doit démarrer sur le port 8080
+* Démarrer le projet : l'application doit démarrer sur le port 8080. Super, mais rien n'est accessible
 * Ajouter une route /hello qui affiche Hello World
 * Avec maven, créer un jar du projet que vous pourrez exécuter avec java
 
 ### Explications
+
+#### Starter
+
+#### Controlleur
+
+Les routes sont mappées à travers des controlleurs.
+L'annotation @RestControlleur indique à Spring que la classe contient des méthodes à exposer.
 
 Quand vous ajouter @SpringBootApplication, cette annotation regroupe plusieurs annotations dont @ScanPackage qui va détecter automatiquement tous les controllers, services...
 
@@ -26,7 +33,7 @@ Quand vous ajouter @SpringBootApplication, cette annotation regroupe plusieurs a
 
 Nous allons commencer à jouer avec la configuration :
 * Démarrer le serveur sur le port 8081
-* Utiliser une implémentation Jetty pour le server embarqué
+* Utiliser une implémentation Jetty pour le server embarqué. Jetty et Undertow sont des serveurs alternatifs à Tomcat
 * Créer deux tests pour vérifier que le contrôleur fonctionne :
     * En appelant directement un serveur qui est lancé
     * En mockant le serveur lors de l'appel

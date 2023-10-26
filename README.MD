@@ -9,6 +9,8 @@ Nous allons créer, à partir de rien, un projet et ajouter les briques une par 
 * [Exercice 2 : Injection de dépendances](exo2_ioc.md)
 * [Exercice 3 : Spring JPA](exo3_jpa.md)
 
+* [Exercice : Documenter son API](exo5_swagger.md)
+
 ## Références
 
 * [Liste des kits de démarrage](https://docs.spring.io/spring-boot/docs/current/reference/html/using.html#using.build-systems.starters)
