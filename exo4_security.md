@@ -10,15 +10,11 @@ Spring Security va nous aider à sécuriser l'application :
 
 * Ajouter la dépendance spring-boot-starter-security
 
-### Schéma de données
-
 ### Du code
 
-* Ajouter la dépendance de spring jpa (spring-boot-starter-data-jpa) et le driver Postgresql
-* Créer le mapping JPA de la classe Book
-* Configurer dans application.properties la connexion à la base de données
-* Ajouter une nouvelle implémentation de BookService qui utilisera un repository jpa
-* Tester ce nouveau repository en le branchant à une base mémoire H2
+### Explication
+
+* Le CORS : mécanisme permettant
 
 ### Un peu loin
 * Ajouter et tester une méthode recherchant les livres à partir de leur titre
