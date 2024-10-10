@@ -49,4 +49,5 @@ Pour chaque ajout de route, prévoir le test associé
 ## A noter
 
 Spring Boot propose [des aides (_starters_)](https://docs.spring.io/spring-boot/docs/3.1.0/reference/htmlsingle/#using.build-systems.starters) pour intégrer rapidement les modules usuels de Spring.
+Pour faciliter la création d'un projet, vous pouvez utiliser [le configurateur](https://start.spring.io/).
 / ! \ Quand vous ajouter Jetty, une mauvaise version de Jakarta est importée par défaut.
